@@ -4,7 +4,7 @@
   <bpmn2:itemDefinition id="_outputCollectionListItem" structureRef="java.util.List"/>
   <bpmn2:itemDefinition id="_B3995773-3645-4173-8325-AA849E02F840_multiInstanceOutputItemType"/>
   <bpmn2:itemDefinition id="_B3995773-3645-4173-8325-AA849E02F840_multiInstanceInputItemType"/>
-  <bpmn2:process id="StunnerTestsProcesses.MultipleInstanceSubprocess" drools:packageName="com.myspace.stunnertestsprocesses" drools:version="1.0" name="MultipleInstanceSubprocess" isExecutable="true">
+  <bpmn2:process id="ProcesoCompleto" drools:packageName="com.myspace.abcdefghi" drools:version="1.0" name="ProcesoCompleto" isExecutable="true">
     <bpmn2:property id="inputCollectionList" itemSubjectRef="_inputCollectionListItem"/>
     <bpmn2:property id="outputCollectionList" itemSubjectRef="_outputCollectionListItem"/>
     <bpmn2:startEvent id="_DF4C21D1-353C-43FE-8392-BBA6D538C026" name="">
@@ -107,7 +107,7 @@ System.out.println("Finising ScriptTask, with outputItemValue:  " + kcontext.get
       </bpmn2:extensionElements>
       <bpmn2:incoming>_366677FF-4A94-4E83-BD28-8C1F1D90D983</bpmn2:incoming>
       <bpmn2:outgoing>_8AF1858C-0851-4EBF-8115-99641E4E7AF5</bpmn2:outgoing>
-      <bpmn2:script><![CDATA[System.out.println("Starting MultipleInstanceSubprocess Initialization: " + new java.util.Date());
+      <bpmn2:script><![CDATA[System.out.println("Starting ProcesoCompleto Initialization: " + new java.util.Date());
 
 java.util.List list = new java.util.ArrayList();
 list.add("Value_1");
@@ -117,7 +117,7 @@ list.add("Value_4");
 
 kcontext.setVariable("inputCollectionList", list);
 
-System.out.println("Finishing MultipleInstanceSubprocess Initialization: " + new java.util.Date());]]></bpmn2:script>
+System.out.println("Finishing ProcesoCompleto Initialization: " + new java.util.Date());]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:scriptTask id="_BB26B818-14A0-4842-93FE-F7D214920D47" name="Task" scriptFormat="http://www.java.com/java">
       <bpmn2:extensionElements>
@@ -127,7 +127,7 @@ System.out.println("Finishing MultipleInstanceSubprocess Initialization: " + new
       </bpmn2:extensionElements>
       <bpmn2:incoming>_09845073-B30F-4554-AE92-4562D3748E53</bpmn2:incoming>
       <bpmn2:outgoing>_46416D6B-E55A-4305-BAB2-6AF5023C6FFD</bpmn2:outgoing>
-      <bpmn2:script><![CDATA[System.out.println("Finishing MultipleInstanceSubprocess: " + new java.util.Date());
+      <bpmn2:script><![CDATA[System.out.println("Finishing ProcesoCompleto: " + new java.util.Date());
 
 System.out.println("outputCollectionList: " + outputCollectionList);]]></bpmn2:script>
     </bpmn2:scriptTask>
@@ -152,7 +152,7 @@ System.out.println("outputCollectionList: " + outputCollectionList);]]></bpmn2:s
     </bpmn2:sequenceFlow>
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="_hMzOiH7nEeiStY1LOP2Zkw">
-    <bpmndi:BPMNPlane id="_hMzOiX7nEeiStY1LOP2Zkw" bpmnElement="MultipleInstanceSubprocess">
+    <bpmndi:BPMNPlane id="_hMzOiX7nEeiStY1LOP2Zkw" bpmnElement="ProcesoCompleto">
       <bpmndi:BPMNShape id="_hMzOin7nEeiStY1LOP2Zkw" bpmnElement="_DF4C21D1-353C-43FE-8392-BBA6D538C026">
         <dc:Bounds height="56.0" width="56.0" x="56.0" y="135.0"/>
       </bpmndi:BPMNShape>
